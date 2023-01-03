@@ -1,0 +1,193 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px auto;
+    background-color: #07b8c9;
+
+    .content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .headers {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 120px;
+            z-index: 10000;
+            position: relative;
+            top: 20%;
+
+            button {
+                width: 150px;
+                position: relative;
+                text-align: center;
+                z-index: 100;
+            }
+        }
+
+        .custom {
+            position: absolute;
+            top: 8.5%;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: 0;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+
+        }
+
+        .custom .shape-fill {
+            fill: #FFFFFF;
+            background-color: #07b8c9;
+        }
+    }
+
+
+    .learning {
+        width: 100%;
+        display: flex;
+        min-height: 120vh;
+        justify-content: center;
+        padding-top: 40px;
+        flex-wrap: wrap;
+        margin-top: 45px;
+        background-color: #000;
+
+        @media (max-width: 750px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            width: 80%;
+            background-color: transparent;
+
+            .labs,
+            .courses {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                @media (max-width: 750px) {
+                    width: 100%;
+                    padding: 30px 0;
+                }
+
+                h1 {
+                    color: #000;
+                    font-weight: 400;
+                    margin: 30px 0;
+                    text-align: center;
+                    font-family: arial;
+
+                    @media (max-width: 1300px) {
+                        font-size: 24px;
+                    }
+
+                }
+
+                .lab,
+                .course {
+                    width: 23%;
+                    height: 350px;
+                    border-radius: 8px;
+                    margin-bottom: 85px;
+                    scale: 1;
+                    margin: 20px;
+                    box-shadow: 0px 10px 30px #21141433;
+                    padding-top: 5px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    transition: 0.5s all ease-in-out;
+                    cursor: pointer;
+                    flex-direction: column;
+                    background-color: #07b8c9;
+
+                    @media (max-width: 1300px) {
+                        width: 50%;
+                    }
+
+                    .img {
+                        position: relative;
+                        width: 90px;
+                        height: 90px;
+                        top: 15%;
+                        left: 5%;
+                        z-index: 10;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        border: 1px solid #000;
+
+                        img {
+                            width: 88px;
+                            height: 88px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .extend {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        padding-top: 70px;
+                        width: 100%;
+                        background-color: #fff;
+                        height: 100%;
+                        clip-path: polygon(500% 100%, 0 0, 0 0, 0 100%);
+
+                        .name {
+                            width: 85%;
+                            margin-bottom: 0;
+
+                            h3 {
+                                font-size: 18px;
+                                font-family: Arial, Helvetica, sans-serif;
+
+                                @media (max-width: 1300px) {
+                                    font-size: 13px;
+                                }
+                            }
+
+                            p {
+                                width: 100%;
+                                font-size: 12px;
+                                font-family: Arial, Helvetica, sans-serif;
+
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                    }
+
+                }
+
+                .lab:hover,
+                .course:hover {
+                    scale: 1.1;
+                }
+            }
+
+        }
+
+
+    }
+}

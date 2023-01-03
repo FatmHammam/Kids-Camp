@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    background-color: #07b8c9;
+
+    .logo {
+        width: 35%;
+    }
+
+    .nav {
+        p {
+            color: #fff;
+            margin: 0 2px;
+            font-weight: 400;
+        }
+
+        button {
+            width: 100px;
+            border-radius: 10px;
+            background-color: transparent;
+            border-top: solid 1px #fff;
+            border-left: dashed 2px #fff;
+            border-right: dashed 2px #fff;
+            border-bottom: solid 1px #fff;
+            color: #975C8D;
+            color: #fff;
+            font-weight: 700;
+            font-family: IBM Plex Sans;
+
+        }
+    }
+
+}

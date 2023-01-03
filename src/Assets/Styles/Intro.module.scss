@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #07b8c9;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(20, 77, 100, 0.5),
+            rgba(2, 0, 0, 0.50)), url("../Images/child.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 10%;
+
+        @media (max-width: 850px) {
+            width: 80%;
+            align-items: center;
+        }
+
+        .headline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 0;
+
+            @media (max-width: 750px) {
+                flex-direction: column;
+            }
+
+            h1 {
+                color: #fff;
+                font-size: 35px;
+                font-weight: 500;
+
+                @media (max-width: 850px) {
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .details {
+            width: 58%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 5px 0;
+
+            @media (max-width: 992px) {
+                align-items: center;
+            }
+
+            p {
+                color: #fff;
+                opacity: 0.8;
+                font-weight: 600;
+                margin-top: 5px;
+
+                @media (max-width: 850px) {
+                    font-size: 12px
+                }
+            }
+
+            .literacy {
+                margin: 0;
+            }
+        }
+
+        button {
+            width: 57%;
+            padding: 10px 0;
+            border-radius: 18px;
+            color: #fff;
+            background-color: #07b8c9;
+            border: none;
+            font-family: IBM Plex Sans;
+        }
+    }
+
+}

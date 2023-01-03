@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 80vh;
+
+    .subcontainer {
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url("../Images/twoKids.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: center;
+
+        @media (max-width: 900px) {
+            background-image: none
+        }
+
+        .creativity,
+        .interaction {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .creative {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                .content {
+                    width: 70%;
+                    margin-left: 28%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    @media (max-width: 900px) {
+                        width: 80%;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        color: #07b8c9;
+
+                        @media (max-width: 900px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    p {
+                        width: 60%;
+                        font-size: 12px;
+
+                        @media (max-width: 900px) {
+                            width: 80%;
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .interaction {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+    }
+
+    h3 {
+        color: #07b8c9;
+        margin-bottom: 0;
+    }
+}
